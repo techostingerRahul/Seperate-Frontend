@@ -1,0 +1,205 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Merriweather", sans-serif;
+  color: #333;
+  background-color: #f7ecf5;
+}
+
+.registration-containertwo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  background-color: #f7ecf5;
+  font-family: "Merriweather";
+  margin-top: 7px;
+  padding-top: 5px;
+}
+
+.content-wrappertwo {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly; /* Space evenly around elements */
+  width: 90%;
+  max-width: 1200px;
+  gap: 100px; /* Reduced gap for smaller screens */
+  flex-wrap: wrap; /* Added this to make it responsive */
+  margin-top: 50px;
+}
+
+.image-sectiontwo {
+  width: 648.022px;
+  height: 632.79px;
+  flex-shrink: 0;
+}
+
+.wedding-imagetwo:hover {
+  transform: scale(0.3s);
+}
+
+.form-sectiontwo {
+  display: grid;
+  width: 420px;
+  height: 430px;
+  padding: 35.019px 32.343px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: 20px;
+  background: #fff;
+  box-shadow: 0px 0px 20.3px 0px rgba(171, 29, 121, 0.5);
+  margin-bottom: 150px;
+}
+
+.form-grouptwo {
+  margin-bottom: 1.5rem;
+}
+
+.form-grouptwo label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: lighter;
+}
+
+.title-innertwo {
+  color: #0f030b;
+  font-weight: bold;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.steptwo {
+  display: flex;
+  justify-content: flex-end;
+  color: #c9208e;
+}
+
+.form-titletwo {
+  color: #ab1d79;
+  font-size: 30px;
+}
+
+.registration-formtwo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* margin-top: 30px; */
+  padding: 5px;
+  border-radius: 20px;
+}
+
+.input-fieldtwo {
+  display: flex;
+  width: 350px;
+  padding: 10.15px 10px;
+  align-items: center;
+  border-radius: 10px;
+  border: 1px solid #000;
+  box-shadow: 0px 0px 4px 0px #fff;
+  margin-bottom: 10px;
+}
+
+.input-fieldtwo:focus {
+  border-color: rgb(156, 146, 146);
+}
+
+.submit-buttontwo {
+  width: 260px;
+  padding: 10px 0px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  background: #ab1d79;
+  box-shadow: 0px 0px 11px 0px #ab1d79;
+  color: #fff;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.submit-buttontwo:hover {
+  background-color: #a31392; /* Darker shade on hover */
+  transform: translateY(-2px); /* Slight lift on hover */
+}
+.header-btntwo:hover {
+  background-color: #ec42d8; /* Darker shade on hover */
+  transform: translateY(-2px); /* Slight lift on hover */
+}
+
+/* Responsive Styles */
+
+@media (max-width: 1200px) {
+  .content-wrappertwo {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .content-wrappertwo {
+    flex-direction: column;
+  }
+
+  .image-sectiontwo,
+  .form-sectiontwo {
+    max-width: 100%;
+    margin: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .titletwo {
+    font-size: 24px;
+  }
+
+  .form-titletwo {
+    font-size: 20px;
+  }
+
+  .input-fieldtwo {
+    padding: 15px;
+  }
+
+  .submit-buttontwo {
+    padding: 10px 60px;
+  }
+}
+
+@media (max-width: 480px) {
+  .titletwo {
+    font-size: 20px;
+  }
+
+  .form-titletwo {
+    font-size: 18px;
+  }
+
+  .input-fieldtwo {
+    padding: 10px;
+  }
+
+  .submit-buttontwo {
+    padding: 8px 40px;
+  }
+}
+
+@media (max-width: 320px) {
+  .titletwo {
+    font-size: 18px;
+  }
+
+  .form-titletwo {
+    font-size: 16px;
+  }
+
+  .input-fieldtwo {
+    padding: 8px;
+  }
+
+  .submit-buttontwo {
+    padding: 6px 30px;
+  }
+}

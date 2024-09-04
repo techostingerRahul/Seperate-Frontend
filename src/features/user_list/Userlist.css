@@ -1,0 +1,200 @@
+.user-list-container {
+  padding: 20px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+ 
+.header {
+  color: #000;
+  text-align: center;
+  font-family: "Beau Rivage";
+  font-size: 71.147px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 2.846px;
+}
+ 
+.h2 {
+  color: #ab1d79;
+  text-align: center;
+  font-family: "Gentium Book Basic";
+  font-size: 70.266px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 2.131px;
+}
+ 
+.user {
+  color: #000;
+  font-family: "Beau Rivage";
+  font-size: 53.266px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 2.131px;
+}
+ 
+.exclusive {
+  color: #ab1d79;
+  font-family: "Beau Rivage";
+  font-size: 47.246px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+ 
+.match {
+  color: #ab1d79;
+  font-family: "Beau Rivage";
+  font-size: 71.147px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 2.846px;
+}
+ 
+.arrow {
+  display: inline-block;
+}
+ 
+.profile-grid-wrapper {
+  margin-bottom: 40px;
+  position: relative;
+}
+ 
+.profile-grid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: repeat(5, 1fr);
+  margin-left: 100px;
+  margin-right: 100px;
+}
+ 
+.next-button {
+  position: absolute;
+  right: 26%;
+  cursor: pointer;
+  width: 40px; /* Adjust size for responsiveness */
+}
+ 
+.previous-button {
+  position: absolute;
+  left: 26%;
+  transform: rotate(180deg);
+  cursor: pointer;
+  width: 40px; /* Adjust size for responsiveness */
+}
+ 
+/* Make the layout responsive */
+ 
+@media (max-width: 1200px) {
+  .profile-grid {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+ 
+  .previous-button {
+    width: 30px;
+    left: 5%;
+  }
+  .next-button {
+    right: 5%;
+    width: 30px;
+  }
+}
+ 
+@media (max-width: 992px) {
+  .profile-grid {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+  .header,
+  .match {
+    font-size: 60px;
+  }
+  .h2 {
+    font-size: 55px;
+  }
+  .user {
+    font-size: 45px;
+  }
+  .exclusive {
+    font-size: 40px;
+  }
+  .previous-button {
+    width: 30px;
+    left: 2%;
+  }
+  .next-button {
+    right: 2%;
+    width: 30px;
+  }
+}
+ 
+@media (max-width: 768px) {
+  .profile-grid {
+    /* margin-left: 20%;
+    margin-right: 20%; */
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+  }
+  .header,
+  .match {
+    font-size: 50px;
+  }
+  .h2 {
+    font-size: 45px;
+  }
+  .user {
+    font-size: 38px;
+  }
+  .exclusive {
+    font-size: 35px;
+  }
+  .previous-button {
+    width: 30px;
+    left: 3%;
+  }
+  .next-button {
+    right: 3%;
+ 
+    width: 30px;
+  }
+}
+ 
+@media (max-width: 576px) {
+  .profile-grid {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .header,
+  .match {
+    font-size: 40px;
+  }
+  .h2 {
+    font-size: 35px;
+  }
+  .user {
+    font-size: 30px;
+  }
+  .exclusive {
+    font-size: 28px;
+  }
+  .previous-button {
+    width: 30px;
+    left: 5%;
+  }
+  .next-button {
+    right: 5%;
+    width: 30px;
+  }
+}
+ 
+@import url("https://fonts.googleapis.com/css2?family=Beau+Rivage&display=swap");
+ 
+  

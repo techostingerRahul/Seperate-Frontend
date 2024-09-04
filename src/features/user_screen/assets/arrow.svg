@@ -1,0 +1,24 @@
+<svg width="58" height="58" viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Arrow button animation (web)" filter="url(#filter0_d_1321_34556)">
+<g clip-path="url(#clip0_1321_34556)">
+<circle id="Ellipse 1763" cx="28.9596" cy="29.3767" r="0.00327444" transform="rotate(180 28.9596 29.3767)" fill="#AB1D79"/>
+<path id="Rectangle 78" d="M22.0756 16.1071C22.3877 15.7425 22.9461 15.7262 23.279 16.072L34.9382 28.1873C35.5051 28.7763 35.5051 29.7081 34.9382 30.2971L23.2714 42.4202C22.942 42.7625 22.3897 42.7482 22.0784 42.3892C21.8546 42.131 21.8173 41.7598 21.9854 41.4623L28.4649 29.9908C28.7273 29.5263 28.7271 28.9582 28.4645 28.4938L21.9855 17.0359C21.8172 16.7382 21.8532 16.3669 22.0756 16.1071Z" fill="#AB1D79"/>
+</g>
+<rect x="10.5029" y="10.9242" width="36.4231" height="36.4231" rx="18.2115" stroke="#AB1D79" stroke-width="1.09555" shape-rendering="crispEdges"/>
+</g>
+<defs>
+<filter id="filter0_d_1321_34556" x="-0.00360298" y="0.417784" width="57.4369" height="57.436" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset/>
+<feGaussianBlur stdDeviation="4.97934"/>
+<feComposite in2="hardAlpha" operator="out"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0.670588 0 0 0 0 0.113725 0 0 0 0 0.47451 0 0 0 0.19 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1321_34556"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1321_34556" result="shape"/>
+</filter>
+<clipPath id="clip0_1321_34556">
+<rect x="9.95508" y="10.3765" width="37.5186" height="37.5186" rx="18.7593" fill="white"/>
+</clipPath>
+</defs>
+</svg>

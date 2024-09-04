@@ -1,0 +1,21 @@
+/* Add this to your existing CSS */
+
+.image-uploader {
+    position: relative;
+  }
+  
+  .upload-label {
+    cursor: pointer;
+  }
+  
+  .upload-input {
+    display: none;
+  }
+  
+  .profile-image {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  

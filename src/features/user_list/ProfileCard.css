@@ -1,0 +1,163 @@
+.maincontainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  margin-top: 100px;
+}
+ 
+.profile-card {
+  width: 160.638px;
+  height: 230.821px;
+  flex-shrink: 0;
+  border-radius: 15.875px;
+  justify-content: center;
+  align-items: center;
+  background: var(--Background, #fff);
+  box-shadow: 0px 0px 30.242px 0px rgba(171, 29, 121, 0.05);
+}
+ 
+.image-container {
+  position: relative;
+  width: 122.926px;
+  height: 124.63px;
+  flex-shrink: 0;
+  border-radius: 15.875px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  margin-top: -60px; /* Add this line to move the image upward */
+}
+ 
+.profile-image {
+  width: 130.926px;
+  height: 132.63px;
+  flex-shrink: 0;
+  border-radius: 15.875px;
+  position: relative;
+}
+ 
+.ad-badge {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background-color: #ff0000;
+  color: #fff;
+  padding: 5px 5px;
+  border-radius: 5px;
+  font-size: 10px;
+}
+ 
+.profile-details {
+  text-align: center;
+  margin-bottom: 30px;
+}
+ 
+.profile-details h3 {
+  color: #000;
+  font-family: Merriweather;
+  font-size: 12.875px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+ 
+.profile-details p {
+  color: #666;
+  font-family: Merriweather;
+  font-size: 10.288px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+ 
+.connect-button {
+  display: inline-flex;
+  padding: 3.844px 4.002px 3.845px 4.65px;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10.688px;
+  color: white;
+  border-radius: 22.708px;
+  background: #1dab3c;
+  cursor: pointer;
+  box-shadow: 0px 0px 4.975px 0px #1dab3c;
+  transition: background-color 0.3s ease;
+}
+ 
+.connect-button:hover {
+  background-color: #3e8e41;
+}
+ 
+.checkmark {
+  display: flex;
+  width: 32.311px;
+  height: 32.311px;
+  padding: 5.312px 5.314px 5.307px 5.305px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 200px;
+  background: var(--Background, #fff);
+}
+ 
+/* Make it responsive for tablets */
+ 
+@media (max-width: 768px) {
+  .maincontainer {
+    flex-direction: column;
+    align-items: center;
+  }
+ 
+  .profile-card {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+ 
+  .image-container {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+    margin-left: 15.9px;
+    margin-top: -30px;
+  }
+ 
+  .profile-image {
+    width: 80px;
+    height: 80px;
+  }
+ 
+  .ad-badge {
+    position: absolute;
+    top: 2px;
+    background-color: #ff0000;
+    color: #fff;
+    border-radius: 5px;
+  }
+  .profile-details {
+    margin-bottom: 10px;
+  }
+ 
+  .profile-details h3 {
+    font-size: 9px;
+  }
+ 
+  .profile-details p {
+    font-size: 7px;
+  }
+ 
+  .connect-button {
+    padding: 2px 3px;
+    gap: 7px;
+    font-size: 10px;
+    margin-bottom: 8px;
+  }
+ 
+  .checkmark {
+    width: 20px;
+    height: 20px;
+    padding: 2px;
+  }
+}
+ 
+ 

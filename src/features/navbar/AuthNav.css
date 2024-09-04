@@ -1,0 +1,141 @@
+@import url("https://fonts.cdnfonts.com/css/brock-script");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--Background, #fff);
+  border-bottom: 1px solid #f1b2da;
+  box-shadow: 5px 2px 6.1px 0px #e079bb;
+}
+
+.logo-nav {
+  color: #e25ab3;
+  font-weight: 400;
+  margin-left: 80px;
+}
+
+.logo-h {
+  color: #ab1d79;
+  text-shadow: 0px 0px 6.183px rgba(255, 255, 255, 0.55);
+  font-family: "Brock Script";
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  margin-right: 160px;
+}
+
+nav li {
+  margin-left: 50px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #b92385;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+nav a:hover {
+  text-decoration: none;
+}
+
+/* Responsive Styles */
+
+@media (max-width: 1200px) {
+  .header-content {
+    padding: 10px;
+  }
+  .logo {
+    margin-left: 40px;
+  }
+  nav ul {
+    margin-right: 80px;
+  }
+  nav li {
+    margin-left: 30px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .header-content {
+    flex-direction: column;
+  }
+  .logo {
+    margin-left: 20px;
+  }
+  nav ul {
+    margin-right: 40px;
+  }
+  nav li {
+    margin-left: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header-content {
+    padding: 5px;
+  }
+  .logo {
+    margin-left: 10px;
+  }
+  nav ul {
+    margin-right: 20px;
+  }
+  nav li {
+    margin-left: 10px;
+  }
+  nav a {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header-content {
+    padding: 2px;
+  }
+  .logo {
+    margin-left: 5px;
+  }
+  nav ul {
+    margin-right: 10px;
+  }
+  nav li {
+    margin-left: 5px;
+  }
+  nav a {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 320px) {
+  .header-content {
+    padding: 1px;
+  }
+  .logo {
+    margin-left: 2px;
+  }
+  nav ul {
+    margin-right: 5px;
+  }
+  nav li {
+    margin-left: 2px;
+  }
+  nav a {
+    font-size: 14px;
+  }
+}

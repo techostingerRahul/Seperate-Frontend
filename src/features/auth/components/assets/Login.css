@@ -1,0 +1,332 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap");
+
+.registration-containerlogin {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  background-color: #f7ecf5;
+  font-family: "Merriweather";
+  /* margin-top: 7px; */
+  /* padding-top: 5px; */
+  margin: 0;
+  padding: 0;
+}
+
+.content-wrapperlogin {
+  display: flex;
+  align-items: center;
+  justify-content: space-around; /* Space evenly around elements */
+  width: 100%;
+  max-width: 1350px;
+  flex-wrap: wrap; /* Added this to make it responsive */
+}
+
+.image-sectionlogin {
+  /* flex: 1; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* max-width: 60%; */
+  transition: transform 0.8s;
+}
+
+.wedding-imagelogin {
+  width: 648.022px;
+  height: 590.79px;
+  transition: transform 0.5s ease-in-out;
+}
+
+.wedding-imagelogin:hover {
+  transform: scale(1.05); /* Corrected hover effect */
+}
+
+.form-sectionlogin {
+  background-color: #ffffff;
+  border-radius: 20px;
+  text-align: center;
+  width: 100%;
+  padding: 49.449px 43.65px 55.909px 43.65px;
+ 
+  box-shadow: 0px 0px 20.3px 0px rgba(171, 29, 121, 0.5);
+}
+
+.title-outsidelogin {
+  color: #ab1d79;
+  font-weight: 1000;
+}
+.title-innerlogin {
+  color: #ab1d79;
+  text-align: center;
+  font-family: Merriweather;
+  font-size: 22.893px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+}
+
+.form-wrapperlogin {
+  margin-top: 10px;
+}
+
+.form-titlelogin {
+  color: #ab1d79;
+  margin-bottom: 20px;
+  padding-top: 10px;
+}
+
+.react-tel-input .selected-flag .arrow {
+  position: absolute;
+  top: 50%;
+  margin-top: 2px;
+  left: 20px;
+  width: 0;
+  height: 0;
+  border-left: 3px solid transparent;
+  border-right: 3px solid transparent;
+  border-top: 4px solid #555;
+}
+.react-tel-input .selected-flag .arrow.up {
+  border-top: none;
+  border-bottom: 4px solid #555;
+}
+.react-tel-input .country-list .country:hover {
+  background-color: #dd77b9 !important;
+}
+.react-tel-input .country-list .country.highlight {
+  background-color: #dd77b9 !important;
+}
+
+/* Hide scrollbar for Firefox */
+.react-tel-input .country-list {
+  scrollbar-width: none; /* Hide scrollbar */
+}
+
+.registration-formlogin {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+  padding: 5px;
+  border-radius: 20px;
+}
+
+.custom-phone-input {
+  border-color: #250319; /* Default border color */
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.custom-phone-input:focus {
+  border-color: rgba(171, 29, 121, 0.5) !important; /* Border color on focus */
+  box-shadow: 0 0 5px 5px rgba(235, 174, 213, 0.5) !important; /* Optional shadow for better visibility */
+}
+
+.otp-fieldslogin {
+  flex-direction: row;
+  gap: 20px;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.otp-fieldslogin input {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  margin-right: 40px;
+  border: 2px solid #ab1d79;
+  box-shadow: 0px 0px 4.94px 0px rgba(230, 20, 20, 0.26);
+}
+
+.otp-fieldlogin :focus {
+  border-color: rgb(221, 23, 23);
+}
+
+.otp-fieldslogin input:last-child {
+  margin-right: 0;
+}
+
+.para {
+  justify-content: center;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.submit-buttonlogin {
+  width: 259.764px;
+  padding: 12.95px 0px 13.21px 0px;
+  border-radius: 10px;
+  color: white;
+  background: #ab1d79;
+  box-shadow: 0px 0px 11px 0px #ab1d79;
+  margin-top: 2rem;
+  cursor: pointer;
+}
+
+.submit-buttonlogin:hover {
+  background-color: #ab1d79; /* Darker shade on hover */
+  transform: translateY(-2px); /* Slight lift on hover */
+}
+
+/* Responsive Styles */
+
+@media (max-width: 1200px) {
+  .content-wrapperlogin {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .content-wrapperlogin {
+    flex-direction: row;
+  }
+
+  .image-sectionlogin,
+  .form-sectionlogin {
+    max-width: 100%;
+    margin: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .titlelogin {
+    font-size: 24px;
+  }
+
+  .form-titlelogin {
+    font-size: 20px;
+  }
+
+  .input-fieldlogin {
+    padding: 15px;
+  }
+
+  .submit-buttonlogin {
+    padding: 10px 60px;
+  }
+}
+
+@media (max-width: 480px) {
+  .titlelogin {
+    font-size: 20px;
+  }
+
+  .form-titlelogin {
+    font-size: 18px;
+  }
+
+  .input-fieldlogin {
+    padding: 10px;
+  }
+
+  .submit-buttonlogin {
+    padding: 8px 40px;
+  }
+}
+
+@media (max-width: 320px) {
+  .titlelogin {
+    font-size: 18px;
+  }
+
+  .form-titlelogin {
+    font-size: 16px;
+  }
+
+  .input-fieldlogin {
+    padding: 8px;
+  }
+
+  .submit-buttonlogin {
+    padding: 6px 30px;
+  }
+}
+/* Tablet landscape (1024px and below) */
+@media (max-width: 1024px) and (orientation: landscape) {
+  .content-wrapperlogin {
+    flex-direction: row;
+  }
+
+  .image-sectionlogin,
+  .form-sectionlogin {
+    max-width: 100%;
+    margin: 0;
+  }
+
+  .wedding-imagelogin {
+    width: 400px;
+    height: 400px;
+  }
+
+  .form-sectionlogin {
+    padding: 20px;
+  }
+
+  .title-innerlogin {
+    font-size: 18px;
+  }
+
+  .form-titlelogin {
+    font-size: 16px;
+  }
+
+  .registration-formlogin {
+    margin-top: 20px;
+  }
+
+  .otp-fieldslogin input {
+    width: 30px;
+    height: 30px;
+  }
+
+  .submit-buttonlogin {
+    width: 200px;
+    padding: 10px 20px;
+  }
+}
+
+/* Tablet portrait (768px and below) */
+@media (max-width: 768px) and (orientation: portrait) {
+  .content-wrapperlogin {
+    flex-direction: row;
+  }
+
+  .image-sectionlogin,
+  .form-sectionlogin {
+    max-width: 100%;
+    margin: 0;
+  }
+
+  .wedding-imagelogin {
+    width: 300px;
+    height: 300px;
+  }
+
+  .form-sectionlogin {
+    padding: 15px;
+  }
+
+  .title-innerlogin {
+    font-size: 16px;
+  }
+
+  .form-titlelogin {
+    font-size: 14px;
+  }
+
+  .registration-formlogin {
+    margin-top: 15px;
+  }
+
+  .otp-fieldslogin input {
+    width: 25px;
+    height: 25px;
+  }
+
+  .submit-buttonlogin {
+    width: 150px;
+    padding: 8px 15px;
+  }
+}
