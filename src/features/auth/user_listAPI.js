@@ -1,4 +1,5 @@
 import axios from "axios";
+import apiClient from "../commonClientsetup/apiClient";
 
 const API_URL = process.env.REACT_APP_API_URL;
 
@@ -7,8 +8,11 @@ export const sendOtpApi = async (phoneNumber, countryCode) => {
     console.log(phoneNumber, countryCode);
     console.log("sendOtpApi con");
     console.log(countryCode);
-    const response = await axios.get(
-      `${API_URL}/auth/generateOtp?phoneNumber=${phoneNumber}&countryCode=${countryCode}`
+    const response = await axios.post(
+      `${API_URL}/auth/generateOtp`,{
+        phoneNumber,
+        countryCode,
+      }
     );
     console.log(response.data.data);
     return response.data.data;
@@ -32,15 +36,10 @@ export const verifyOtpApi = async (phoneNumber, countryCode, otp) => {
   }
 };
 
-export const UserLoginfoApi = async (jwt) => {
+export const UserLoginfoApi = async () => {
   try {
-    console.log(jwt);
     console.log("getting jwt to fetch the user data");
-    const response = await axios.get(`${API_URL}/user/details`, {
-      headers: {
-        Authorization: `Bearer ${jwt}`,
-      },
-    });
+    const response = await apiClient.get(`${API_URL}/user/details`);
     console.log(response.data.data);
     return response.data.data;
   } catch (error) {
@@ -56,12 +55,12 @@ export const sendUserDataApi = async (userData, jwt) => {
     const data = {
       name: userData.name,
       email: userData.email,
-      placeId: userData.palceId,
+      placeId: userData.placeId,
       dateOfBirth: userData.dateOfBirth,
       gender: userData.gender,
       profileCreatedBy: userData.profileCreatedBy,
-    };
-
+    };  
+    console.log(data)
     const response = await axios.post(`${API_URL}/user/basic`, data, {
       headers: {
         Authorization: `Bearer ${jwt}`,

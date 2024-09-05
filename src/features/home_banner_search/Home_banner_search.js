@@ -4,6 +4,8 @@ import "./assets/bann.css";
 import Welcomepopup from "./Welcomepopup";
 import { useLocation, useNavigate } from "react-router-dom";
 import { fetchLocations, validateJwt } from "../auth/authUtils";
+import { useSelector } from "react-redux";
+import { selectUserLogInfo } from "../auth/user_listSlice";
  
 const HomeBannerSearch = () => {
   // State for Each Select
@@ -23,7 +25,7 @@ const HomeBannerSearch = () => {
   const [selectedLocation, setSelectedLocation] = useState("");
   const [jwt, setJwt] = useState(localStorage.getItem("jwt"));
  
- 
+//  const loginfo  = useSelector(selectUserLogInfo)
  
   useEffect(() => {
     const fetchLocationSuggestions = async () => {
@@ -396,7 +398,7 @@ const HomeBannerSearch = () => {
         </div>
         {/* Popup for successful registration */}
         {isPopupOpen && (
-          <Welcomepopup closePopup = {closePopup} />
+          <Welcomepopup  closePopup = {closePopup} />
         )}
       </div>
     </section>

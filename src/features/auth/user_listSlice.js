@@ -45,10 +45,9 @@ export const verifyOtp = createAsyncThunk(
 
 export const UserLoginfo = createAsyncThunk(
   "auth/UserLoginfo",
-  async ({ jwt }, { rejectWithValue }) => {
+  async (_, { rejectWithValue }) => {
     try {
-      console.log(jwt);
-      const data = await UserLoginfoApi(jwt);
+      const data = await UserLoginfoApi();
       console.log(data);
       return data;
     } catch (error) {

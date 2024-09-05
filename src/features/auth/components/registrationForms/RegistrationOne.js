@@ -13,7 +13,7 @@ const RegistrationOne = ({nextPage}) => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
-    palceId: "",
+    placeId: "",
     dateOfBirth: null,
     gender: "",
     profileCreatedBy: "",
@@ -67,8 +67,8 @@ const RegistrationOne = ({nextPage}) => {
   } else if (!/\S+@\S+\.\S+/.test(formData.email)) {
     newErrors.email = "Email is invalid";
   }
-  if (!formData.palceId.trim()) {
-    newErrors.palceId = "Location is required";
+  if (!formData.placeId.trim()) {
+    newErrors.placeId = "Location is required";
   }
   if (!formData.profileCreatedBy) {
     newErrors.profileCreatedBy = "Relationship is required";
@@ -154,7 +154,7 @@ const RegistrationOne = ({nextPage}) => {
   const handleLocationSelect = (location) => {
     setFormData((prevData) => ({
       ...prevData,
-      palceId: location.palceId,
+      placeId: location.placeId,
     }));
     setSelectedLocation(location.name);
     setLocationQuery(location.name); 
@@ -251,27 +251,27 @@ const RegistrationOne = ({nextPage}) => {
                         <div className="input-relation" >
                           <button
                             type="button"
-                            className={`header-btnone ${activeButton === "Myself" ? "active" : ""}`}
-                            onClick={() => handleRelationshipChange("Myself")}>
+                            className={`header-btnone ${activeButton === "SELF" ? "active" : ""}`}
+                            onClick={() => handleRelationshipChange("SELF")}>
                             Myself
                           </button>
                           <button
                             type="button"
-                            className={`header-btnone ${activeButton === "Parent" ? "active" : ""}`}
-                            onClick={() => handleRelationshipChange("Parent")}>
+                            className={`header-btnone ${activeButton === "PARENT" ? "active" : ""}`}
+                            onClick={() => handleRelationshipChange("PARENT")}>
                             As a Parent
                           </button>
                           <button
                             type="button"
-                            className={`header-btnone ${activeButton === "Friend" ? "active" : ""}`}
-                            onClick={() => handleRelationshipChange("Friend")}>
+                            className={`header-btnone ${activeButton === "FRIEND" ? "active" : ""}`}
+                            onClick={() => handleRelationshipChange("FRIEND")}>
                             As a Friend
                           </button>
                           <button
                             type="button"
-                            className={`header-btnone ${activeButton === "Relative" ? "active" : ""}`}
+                            className={`header-btnone ${activeButton === "RELATIVE" ? "active" : ""}`}
                             onClick={() =>
-                              handleRelationshipChange("Relative")
+                              handleRelationshipChange("RELATIVE")
                             }>
                             As a Relative
                           </button>
@@ -338,7 +338,7 @@ const RegistrationOne = ({nextPage}) => {
                         <div className="location-dropdown">
                           {locations.map((location) => (
                             <div
-                              key={location.palceId}
+                              key={location.placeId}
                               className="dropdown-item"
                               onClick={() => handleLocationSelect(location)}
                             >
@@ -348,7 +348,7 @@ const RegistrationOne = ({nextPage}) => {
                         </div>
                       )}
                     </div>
-                    {errors.palceId && <p className="error">{errors.palceId}</p>}
+                    {errors.placeId && <p className="error">{errors.placeId}</p>}
 
 
                       <div className="">

@@ -107,10 +107,9 @@ const RegistrationThree = ({nextPage,skip}) => {
                         className="form-control input-fieldthree"
                       >
                         <option value="">Employment type</option>
-                        <option value="SALARIED">Private sector</option>
+                        <option value="PRIVATE">Private sector</option>
                         <option value="GOVERNMENT">Government/Public sector</option>
-                        <option value="ARMEDFORCES">Defence Services</option>
-                        <option value="SELFEMPLOYED">Self Employed</option>
+                        <option value="DEFENCE">Defence Services</option>
                         <option value="BUSINESS">Business</option>
                         <option value="UNEMPLOYED">Not Working</option>
                       </select>

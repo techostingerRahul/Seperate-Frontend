@@ -24,6 +24,7 @@ import RegistrationForms from "./pages/RegistrationForms";
 import PreferedF from "./pages/PreferedF";
 import Connections from "./features/connections/Connections";
 import ConnectRequest from "./pages/ConnectRequest";
+import SearchUser from "./pages/SearchUser";
 
 const router = createBrowserRouter([
   { path: "/", element: <Home /> },
@@ -109,6 +110,15 @@ const router = createBrowserRouter([
 
     ),
   },
+
+  {
+    path:"/searchuser",
+    element:(
+      <PrivateRoute>
+        <SearchUser/>
+       </PrivateRoute>
+    )
+  }
 ]);
 
 function App() {
